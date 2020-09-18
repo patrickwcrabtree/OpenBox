@@ -15,3 +15,15 @@ OpenBox leverages the following static analysis and testing tools:
 3) CallGraph
 4) attack-surface-detector
 5) ysoserial
+
+OpenBox_0_0_1.zip contains all of the tools used in the automation as well as the OpenBox jar.
+
+To run, just unzip the package somewhere on your system, and open a command terminal and from that location run:
+java -jar OpenBox-0.0.1-all.jar [Source Path]
+Optional Parameters:
+-hostname=[i.e.http://localhost:8080/spiracle]
+-component-path=<path to 3rd party libraries> (Used if your 3rd party libraries are not located in your provided [Source Path]
+-debug (just prints the info to a log.txt, if not set it will print everything to console)
+
+TestApp.zip containts the modified version of Waratek Spiracle I used to test with. This just needs to be unzipped for testing, but to run you can just place the generate war file in an application server, such as Tomcat.
+
